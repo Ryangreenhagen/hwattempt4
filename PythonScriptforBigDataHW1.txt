@@ -1,0 +1,25 @@
+# This advanced Python script will let you test your Internet Speed. 
+# Simply you need to install speed test modules and run the following code
+
+# pip install pyspeedtest
+# pip install speedtest
+# pip install speedtest-cli
+
+#method 1
+
+import speedtestspeedTest = speedtest.Speedtest() 
+print(speedTest.get_best_server())
+
+#Check download speed 
+print(speedTest.download())
+
+#Check upload speed
+print(speedTest.upload())
+
+# Method 2
+
+import pyspeedtest
+st = pyspeedtest.SpeedTest()
+st.ping()
+st.download()
+st.upload()
